@@ -1,5 +1,7 @@
 import os
+import httpx
 from openapi import SDK, AsyncSDK
+from openapi.models.errors import SDKError
 from .common_helpers import *
 import pytest
 
@@ -59,3 +61,34 @@ async def test_global_security_flattening_env_var_fallback_async():
             assert res.status_code == 200
     finally:
         os.environ.pop("SPEAKEASY_API_KEY_AUTH", None)
+
+
+def test_global_security_flattening_empty_string_env_var_fallback():
+    record_test("auth-global-security-flattening-env-var-fallback")
+
+    os.environ["SPEAKEASY_API_KEY_AUTH"] = "Bearer testToken"
+    try:
+        with SDK(api_key_auth="") as s:
+            res = s.auth.api_key_auth_global()
+            assert res is not None
+            assert res.status_code == 200
+    finally:
+        os.environ.pop("SPEAKEASY_API_KEY_AUTH", None)
+
+
+def test_global_security_flattening_empty_string_without_env_var():
+    record_test("auth-global-security-flattening-env-var-fallback")
+
+    os.environ.pop("SPEAKEASY_API_KEY_AUTH", None)
+    captured = {}
+
+    def capture(request):
+        captured["headers"] = request.headers
+        return httpx.Response(401, request=request)
+
+    client = httpx.Client(transport=httpx.MockTransport(capture))
+    with SDK(server_url=HTTPBIN_URL, api_key_auth="", client=client) as s:
+        with pytest.raises(SDKError):
+            s.auth.api_key_auth_global()
+
+    assert "authorization" not in captured["headers"]

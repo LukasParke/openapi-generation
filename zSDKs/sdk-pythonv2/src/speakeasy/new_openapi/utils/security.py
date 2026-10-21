@@ -49,6 +49,8 @@ def get_security(
         metadata = find_field_metadata(sec_field, SecurityMetadata)
         if metadata is None:
             continue
+        if value == "" and metadata.sub_type not in ["basic", "custom"]:
+            continue
         if metadata.option:
             _parse_security_option(headers, query_params, value)
             return headers, query_params
@@ -68,7 +70,9 @@ def get_security(
 
 
 def get_security_from_env(security: Any, security_class: Any) -> Optional[BaseModel]:
-    if security is not None:
+    if security is not None and not (
+        isinstance(security, security_class) and _is_unset(security)
+    ):
         return security
 
     if not issubclass(security_class, BaseModel):
@@ -136,7 +140,26 @@ def get_security_from_env(security: Any, security_class: Any) -> Optional[BaseMo
             "SPEAKEASY_MY_API_KEY"
         )
 
-    return security_class(**security_dict) if security_dict else None
+    return security_class(**security_dict) if security_dict else security
+
+
+def _is_unset(security: BaseModel) -> bool:
+    for name, field in security.__class__.model_fields.items():
+        value = getattr(security, name)
+        if value is None:
+            continue
+
+        metadata = find_field_metadata(field, SecurityMetadata)
+        if metadata is None:
+            continue
+        if metadata.option and isinstance(value, BaseModel) and _is_unset(value):
+            continue
+        if value == "" and metadata.sub_type not in ["basic", "custom"]:
+            continue
+
+        return False
+
+    return True
 
 
 def _parse_security_option(
@@ -213,6 +236,9 @@ def _parse_security_scheme_value(
 ):
     scheme_type = scheme_metadata.scheme_type
     sub_type = scheme_metadata.sub_type
+
+    if value == "":
+        return
 
     header_name = security_metadata.get_field_name(field_name)
 
