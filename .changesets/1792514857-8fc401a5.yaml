@@ -1,0 +1,12 @@
+id: 1792514857-8fc401a5
+features:
+    - core
+targets:
+    - go
+    - cli
+    - terraform
+type: fix
+bump: patch
+description: require Go 1.26.10 in generated go.mod files so builds use a toolchain that rejects the compromised eMudhra emSign intermediate CA certificates
+author: ThomasRooney
+date: "2026-10-20"
