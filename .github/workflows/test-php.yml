@@ -33,6 +33,8 @@ jobs:
         with:
           php-version: "8.3"
           extensions: mbstring, xml, curl
+        env:
+          update: true
 
       - name: Configure Composer
         run: |
