@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.950.7] - 2026-10-21
+### :bug: Bug Fixes
+- [`face5cd`](https://github.com/speakeasy-api/openapi-generation/commit/face5cdb2e20ad7a1eae55d3da72a684813766ea) - **go,cli,terraform**: require Go 1.26.10 in generated go.mod files ([#125](https://github.com/speakeasy-api/openapi-generation/pull/125)) *(commit by [@ThomasRooney](https://github.com/ThomasRooney))*
+
+
 ## [v2.950.6] - 2026-10-21
 ### :wrench: Chores
 - [`5033ab8`](https://github.com/speakeasy-api/openapi-generation/commit/5033ab84627d494227ed1e59e42ac10e07bf1359) - bump Go to 1.26.10 ([#123](https://github.com/speakeasy-api/openapi-generation/pull/123)) *(commit by [@ThomasRooney](https://github.com/ThomasRooney))*
@@ -20644,3 +20649,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v2.950.4]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.3...v2.950.4
 [v2.950.5]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.4...v2.950.5
 [v2.950.6]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.5...v2.950.6
+[v2.950.7]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.6...v2.950.7
