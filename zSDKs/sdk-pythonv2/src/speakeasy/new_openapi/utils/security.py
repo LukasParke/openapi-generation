@@ -70,9 +70,7 @@ def get_security(
 
 
 def get_security_from_env(security: Any, security_class: Any) -> Optional[BaseModel]:
-    if security is not None and not (
-        isinstance(security, security_class) and _is_unset(security)
-    ):
+    if security is not None:
         return security
 
     if not issubclass(security_class, BaseModel):
@@ -140,26 +138,7 @@ def get_security_from_env(security: Any, security_class: Any) -> Optional[BaseMo
             "SPEAKEASY_MY_API_KEY"
         )
 
-    return security_class(**security_dict) if security_dict else security
-
-
-def _is_unset(security: BaseModel) -> bool:
-    for name, field in security.__class__.model_fields.items():
-        value = getattr(security, name)
-        if value is None:
-            continue
-
-        metadata = find_field_metadata(field, SecurityMetadata)
-        if metadata is None:
-            continue
-        if metadata.option and isinstance(value, BaseModel) and _is_unset(value):
-            continue
-        if value == "" and metadata.sub_type not in ["basic", "custom"]:
-            continue
-
-        return False
-
-    return True
+    return security_class(**security_dict) if security_dict else None
 
 
 def _parse_security_option(
