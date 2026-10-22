@@ -49,8 +49,6 @@ def get_security(
         metadata = find_field_metadata(sec_field, SecurityMetadata)
         if metadata is None:
             continue
-        if value == "" and metadata.sub_type not in ["basic", "custom"]:
-            continue
         if metadata.option:
             _parse_security_option(headers, query_params, value)
             return headers, query_params

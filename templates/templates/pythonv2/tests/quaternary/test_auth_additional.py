@@ -63,7 +63,6 @@ async def test_global_security_flattening_env_var_fallback_async():
         os.environ.pop("SPEAKEASY_API_KEY_AUTH", None)
 
 
-
 def test_global_security_flattening_empty_string_ignores_env_var():
     record_test("auth-global-security-flattening-env-var-fallback")
 
