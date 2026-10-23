@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.950.13] - 2026-10-23
+### :bug: Bug Fixes
+- [`7ab7969`](https://github.com/speakeasy-api/openapi-generation/commit/7ab7969e1a7faad80633fe0b966dec58edaee551) - **terraform,typescript,mcp**: raise x/net, vitest, express and MCP server override floors past open advisories ([#144](https://github.com/speakeasy-api/openapi-generation/pull/144)) *(commit by [@AshGodfrey](https://github.com/AshGodfrey))*
+
+
 ## [v2.950.12] - 2026-10-23
 ### :bug: Bug Fixes
 - [`21952ce`](https://github.com/speakeasy-api/openapi-generation/commit/21952ce7dff86a053847e53d6881827fa82adf45) - **java,python**: bump jackson-databind to 2.22.4 and the httpx2 floor to 2.12.0 ([#143](https://github.com/speakeasy-api/openapi-generation/pull/143)) *(commit by [@AshGodfrey](https://github.com/AshGodfrey))*
@@ -20680,3 +20685,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v2.950.10]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.9...v2.950.10
 [v2.950.11]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.10...v2.950.11
 [v2.950.12]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.11...v2.950.12
+[v2.950.13]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.12...v2.950.13
