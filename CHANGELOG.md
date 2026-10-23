@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.950.12] - 2026-10-23
+### :bug: Bug Fixes
+- [`21952ce`](https://github.com/speakeasy-api/openapi-generation/commit/21952ce7dff86a053847e53d6881827fa82adf45) - **java,python**: bump jackson-databind to 2.22.4 and the httpx2 floor to 2.12.0 ([#143](https://github.com/speakeasy-api/openapi-generation/pull/143)) *(commit by [@AshGodfrey](https://github.com/AshGodfrey))*
+
+
 ## [v2.950.11] - 2026-10-22
 ### :wrench: Chores
 - [`77ec7f4`](https://github.com/speakeasy-api/openapi-generation/commit/77ec7f4a280c824ac718c9c5fca401149fce4653) - use literal shells for the Windows installer CI matrix [skip changelog] ([#136](https://github.com/speakeasy-api/openapi-generation/pull/136)) *(commit by [@AshGodfrey](https://github.com/AshGodfrey))*
@@ -20674,3 +20679,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v2.950.9]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.8...v2.950.9
 [v2.950.10]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.9...v2.950.10
 [v2.950.11]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.10...v2.950.11
+[v2.950.12]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.11...v2.950.12
