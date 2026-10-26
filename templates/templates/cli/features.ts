@@ -1,15 +1,15 @@
 //@ts-ignore
 // TODO: determine if this needs to be insync with the go version or can define these differently
 const supportedFeatures = {
-  core: "0.9.12",
+  core: "0.9.14",
   allowReserved: "0.2.0",
   getRequestBodies: "0.0.1",
   flattening: "0.0.0",
-  globalSecurity: "0.1.0",
+  globalSecurity: "0.1.1",
   methodSecurity: "0.0.0",
   globalServerURLs: "0.1.0",
   methodServerURLs: "0.0.0",
-  globals: "0.1.1",
+  globals: "0.1.2",
   enums: "0.0.2",
   openEnums: "0.0.1",
   serverIDs: "0.0.0",

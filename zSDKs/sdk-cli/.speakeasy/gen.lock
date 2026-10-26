@@ -13,7 +13,7 @@ features:
     bigint: 0.0.0
     cliCommands: 0.2.0
     constsAndDefaults: 0.0.0
-    core: 0.9.12
+    core: 0.9.14
     customSecuritySchemes: 0.0.0
     decimal: 0.0.0
     deprecations: 0.0.0
@@ -23,9 +23,9 @@ features:
     errorUnions: 0.0.0
     errors: 0.2.1
     examples: 0.1.1
-    globalSecurity: 0.1.0
+    globalSecurity: 0.1.1
     globalServerURLs: 0.1.0
-    globals: 0.1.1
+    globals: 0.1.2
     groups: 0.1.0
     includes: 0.0.0
     methodSecurity: 0.0.0
