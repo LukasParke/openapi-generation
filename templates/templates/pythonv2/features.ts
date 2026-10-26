@@ -58,7 +58,7 @@ const supportedFeatures = {
   urlBasedPagination: "1.0.0",
   operationTimeout: "0.3.1",
   defaultEnabledRetries: "0.2.0",
-  envVarSecurityUsage: "0.3.3",
+  envVarSecurityUsage: "0.3.4",
   envVarGlobals: "0.3.0",
   deepObjectParams: "0.1.0",
   customSecuritySchemes: "0.1.0",
