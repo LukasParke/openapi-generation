@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.952.1] - 2026-10-26
+### :bug: Bug Fixes
+- [`9e6a125`](https://github.com/speakeasy-api/openapi-generation/commit/9e6a125095775c1e5f376937baf38d5b4087a25c) - **python**: make the resource management README snippet valid Python ([#128](https://github.com/speakeasy-api/openapi-generation/pull/128)) *(commit by [@LukasParke](https://github.com/LukasParke))*
+
+
 ## [v2.952.0] - 2026-10-26
 ### :bee: New Features
 - [`66264d5`](https://github.com/speakeasy-api/openapi-generation/commit/66264d553c704214ed64d86a3896f71d4bc65635) - **cli**: let declarative command flags imply other request body values ([#139](https://github.com/speakeasy-api/openapi-generation/pull/139)) *(commit by [@TristanSpeakEasy](https://github.com/TristanSpeakEasy))*
@@ -20707,3 +20712,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v2.950.14]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.13...v2.950.14
 [v2.951.0]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.14...v2.951.0
 [v2.952.0]: https://github.com/speakeasy-api/openapi-generation/compare/v2.951.0...v2.952.0
+[v2.952.1]: https://github.com/speakeasy-api/openapi-generation/compare/v2.952.0...v2.952.1
