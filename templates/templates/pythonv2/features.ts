@@ -13,7 +13,7 @@ const supportedFeatures = {
   serverIDs: "3.0.0",
   nameOverrides: "3.0.3",
   includes: "3.0.0",
-  docs: "1.5.5",
+  docs: "1.5.6",
   examples: "3.0.4",
   groups: "3.0.1",
   deprecations: "3.0.2",
