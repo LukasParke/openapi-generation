@@ -13,7 +13,7 @@ features:
     bigint: 0.0.0
     cliCommands: 0.2.0
     constsAndDefaults: 0.0.0
-    core: 0.9.11
+    core: 0.9.12
     customSecuritySchemes: 0.0.0
     decimal: 0.0.0
     deprecations: 0.0.0
@@ -37,7 +37,7 @@ features:
     pagination: 0.2.0
     responseFormat: 0.1.2
     retries: 0.1.1
-    serverEvents: 0.1.4
+    serverEvents: 0.1.5
     serverIDs: 0.0.0
     tests: 0.0.0
     unions: 0.1.3
