@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.951.0] - 2026-10-26
+### :bee: New Features
+- [`fb77f13`](https://github.com/speakeasy-api/openapi-generation/commit/fb77f1335c475e40fe3b87a61e741030df867ca6) - **cli**: add configure --clear and name the supported OS credential stores in whoami help ([#140](https://github.com/speakeasy-api/openapi-generation/pull/140)) *(commit by [@TristanSpeakEasy](https://github.com/TristanSpeakEasy))*
+
+### :bug: Bug Fixes
+- [`f2485ac`](https://github.com/speakeasy-api/openapi-generation/commit/f2485acd97ef2d246e3cbdb6943093573c6d6377) - **cli**: return structured results from configure and auth login/logout in machine output modes ([#141](https://github.com/speakeasy-api/openapi-generation/pull/141)) *(commit by [@TristanSpeakEasy](https://github.com/TristanSpeakEasy))*
+
+
 ## [v2.950.14] - 2026-10-26
 ### :bug: Bug Fixes
 - [`f90e757`](https://github.com/speakeasy-api/openapi-generation/commit/f90e757e77805a0c6e266103abc479f1b5c431fd) - **cli**: show request progress while streaming-capable operations wait for a response ([#138](https://github.com/speakeasy-api/openapi-generation/pull/138)) *(commit by [@TristanSpeakEasy](https://github.com/TristanSpeakEasy))*
@@ -20692,3 +20700,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v2.950.12]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.11...v2.950.12
 [v2.950.13]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.12...v2.950.13
 [v2.950.14]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.13...v2.950.14
+[v2.951.0]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.14...v2.951.0
