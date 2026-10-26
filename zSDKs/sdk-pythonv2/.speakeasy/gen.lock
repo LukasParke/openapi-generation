@@ -23,11 +23,11 @@ features:
     decimal: 1.0.0
     defaultEnabledRetries: 0.2.0
     deprecations: 3.0.2
-    docs: 1.5.5
+    docs: 1.5.6
     downloadStreams: 1.0.1
     enumUnions: 0.1.1
     enums: 3.2.2
-    envVarSecurityUsage: 0.3.3
+    envVarSecurityUsage: 0.3.4
     errorUnions: 1.0.2
     errors: 3.4.5
     examples: 3.0.4
